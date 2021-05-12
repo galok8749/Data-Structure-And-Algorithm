@@ -77,7 +77,6 @@ void updateQ(int node, int s, int e, int sq, int eq, int val) {
 		// if current node is not leaf node
 		if(s != e) {
 			// set the lazy value for children
-
 			lazy[2*node] += val;
 		    lazy[2*node + 1] += val;
 		}
