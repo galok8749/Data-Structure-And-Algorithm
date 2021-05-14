@@ -11,9 +11,11 @@ public:
         ans.push_back(temp);
         
         for(int i = idx; i < nums.size(); i+=1) {
-            // take element
+            // take element now all subset will start with nums[i]
             temp.push_back(nums[i]);
             printAllSubset(i + 1, temp, nums, ans);
+            
+            // do not take element
             temp.pop_back();
         }
     }
