@@ -2,6 +2,14 @@
 problem link
 
 https://leetcode.com/problems/subsets/
+
+The subset problem is all about choice, whether you want certain element inside the vector or not. 
+For example, [1, 2, 3], starting with pos = 0. At pos = 0, you push 1 into temp, then recursively call the function. 
+Then this reclusive call is a "crossroad". 
+Inside the call (with all other calls inside), you have the "1" chosen and every vector you produce will begin with 1. 
+When the call returns (ie. you pop 1 out), you are on the other road of the crossroad, which does not contain 1. 
+These are just the first "choice" you are faced. And after that you face with other similar choices.
+
 */
 
 class Solution {
